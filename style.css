@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Copperplate;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    font-size: large;
 }
 
 header {
@@ -104,9 +105,9 @@ h1 {
 
 #tekst_1{
 text-align: justify;
-padding-left: 25%;
-padding-right: 25%;
-
+margin-left: 25%;
+margin-right: 25%;
+font-weight: bold;
 }
 
 .fotorama{
@@ -118,17 +119,97 @@ padding-right: 25%;
 
 #tekst_2{
     text-align: justify;
-    padding-left: 25%;
-    padding-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
     
     }
 
-    hr {
-        border: 0; /* Ukloni uobičajeni okvir */
-        height: 1px; /* Debljina linije */
-        background-color: #43525a; /* Boja linije */
-        margin: 20px 0; /* Margine iznad i ispod linije */
-        
-    }
+hr {
+    border: 0; /* Ukloni uobičajeni okvir */
+    height: 1px; /* Debljina linije */
+    background-color: #43525a; /* Boja linije */
+    margin: 20px 0; /* Margine iznad i ispod linije */
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+ }
+
+ a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+ .teme{
+margin-left: 25%;
+margin-right: 25%;
+font-size: 20px;
+
+ }li{
+    padding: 10px;
+ }
+
+
+
+.mogucnost_sudjelovanja{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+}
+
+.rokovi{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+
+}
+
+.lokacija{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+     }
     
 
+     .smjestaj{
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 20px;
+
+     }
+
+     .javni_prijevoz{
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 20px;
+     }
+
+.privola{
+
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+}
+
+.sponzori{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+
+}
+
+#top{
+    font-size: 20px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
