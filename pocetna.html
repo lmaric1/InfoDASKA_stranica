@@ -9,32 +9,45 @@
     <script src="fotogalerija/fotorama.js"></script>
 <link rel="stylesheet" href="fotogalerija/fotorama.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script>
+  $(document).ready(function() {
+      $('.fotorama').fotorama({
+          width: '900px',
+          ratio: '700/467',
+          maxwidth: '100%',
+          transition: 'dissolve', // Promjena načina prijelaza između slika
+          autoplay: 3000 // Automatska promjena slike svakih 3000 milisekundi (3 sekunde)
+      });
+  });
+</script>
 </head>
 <body>
     <a id="top"></a>
 
     <nav>
-
-        <div class="dropdown">
-            <a href="#prijave" class="dropdown-toggle">Prijave</a>
-            <div class="dropdown-content">
-                <a href="#tema">Tema</a>
-                <a href="#mogucnost_sudjelovanja">Mogućnosti sudjelovanja</a>
-                <a href="#rokovi">Rokovi</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <a href="#konferencija" class="dropdown-toggle">Konferencija</a>
-            <div class="dropdown-content">
-                <a href="#lokacija">Lokacija</a>
-                <a href="#smjestaj">Smještaj</a>
-                <a href="#javni_prijevoz">Javni prijevoz</a>
-                <a href="#privola">Privola za fotografiranje</a>
-            </div>
-        </div>
-        <a href="#sponzori">Sponzori</a>
-    </nav>
+      <div class="logo">
+          <img src="logo1.png" alt="Logo">
+      </div>
+      <div class="dropdown">
+          <a href="#prijave" class="dropdown-toggle">Prijave</a>
+          <div class="dropdown-content">
+              <a href="#tema">Tema</a>
+              <a href="#upute">Mogućnosti sudjelovanja</a>
+              <a href="#rokovi">Rokovi</a>
+          </div>
+      </div>
+      <div class="dropdown">
+          <a href="#konferencija" class="dropdown-toggle">Konferencija</a>
+          <div class="dropdown-content">
+              <a href="#lokacija">Lokacija</a>
+              <a href="#smjestaj">Smještaj</a>
+              <a href="#javni_prijevoz">Javni prijevoz</a>
+              <a href="#privola">Privola za fotografiranje</a>
+          </div>
+      </div>
+      <a href="#sponzori">Sponzori</a>
+  </nav>
+  
     
 <section id="sekcija_1">
    <div class="fotorama" data-width="900px" data-ratio="700/467" data-max-width="100%">
@@ -62,34 +75,61 @@
 
     <p>Ovogodišnja glavna tema konferencije je: <b>Umjetna inteligencija - izazovi i mogućnosti</b>
       </p>
-      <br>
-      <p>Podteme konferencije su vezane uz sljedeće naslove: <br> 
+      
+        <p id="tekst3">Nalazimo se u vremenu velikog uspona umjetne inteligencije što dovodi do različitih mišljenja i stavova glede same umjetne inteligencije. Populacija se dijeli na one koji umjetnu inteligenciju smatraju vrlo korisnim alatom koji donosi različite nove mogućnosti te na one koji razvijaju osjećaj nesigurnosti i uviđaju izazove koje ona donosi.
+        <br> <br>
+        S obzirom na to da je umjetna inteligencija vrlo široko područje s izuzetno velikim utjecajem na brojna, kako znanstvena, tako i svakodnevna područja ljudskog djelovanja, <b>tema konferencije uključuje, ali nikako nije ograničena na, sljedeće podteme: </b>
+        <br> 
          <ul> 
-          <li>rođenje tehnokulture i transformacija ljudske povijest </li>
-          <li> život u tehnosferi</li>
-          <li> tehnološke promjene i tehnologija</li>
-          <li> tehnološke promjene i priroda</li>
-          <li> tehnološke promjene i čovjek</li>
-          <li> posthumanizam</li>
-          <li> transhumanizam</li>
-          <li> čovjek kao posthumani i transhumani subjekt </li>
-          <li> ljudska priroda i virtualna egzistencija</li>
-          <li> (digitalni) život poslije (fizičke) smrt</li>
-          <li> Deus ex machina: „uspon” umjetne inteligencije i "pad" čovjeka</li>
+         <li> Primjena umjetne inteligencije u obrazovanju</li>
+         <li> Primjena umjetne inteligencije u knjižnicama, arhivima i muzejima</li>
+         <li> Primjena umjetne inteligencije u svakodnevnom životu</li>
+         <li> Etika korištenja umjetne inteligencije i odgovorno korištenje</li>
+         <li> AI pismenost</li>
+         <li> Umjetna inteligencija kao pokretač tehnoloških promjena</li>
+          
       </ul>
       </p>
   </div>  
   <hr>
 
-  <div class="mogucnost_sudjelovanja">
+  <div class="upute">
 
-  <h2 id="mogucnost_sudjelovanja">Mogućnosti sudjelovanja</h2>
+  <h2 id="upute">Upute</h2>
+<ul>
+<li>predaje se u formatu MS Word ili drugom tekstualnom formatu</li>
+<li>naslov se piše fontom Times New Roman, veličine 14</li>
+<li>strukturirani sažetak piše se fontom Times New Roman, veličine 12, s  obostranim poravnanjem te proredom 1,5</li>
+<li>treba sadržavati 300 do 500 riječi</li>
+<li>sažetak mora sadržavati cilj, istraživačka pitanja, metodologiju i/ili najvažnije rezultate istraživanja, zaključak te ključne riječi (najviše 5)</li>
+<li>potrebno je napraviti naslovnu stranicu s podacima o autoru/ici, sveučilištu, odjelu/odsjeku te elektroničku adresu autora/ice</li>
+<li>na konferenciju se moguće prijaviti samostalno, u paru ili u timu (informacije iz prethodne točke je potrebno ispuniti za svakog autora/icu)</li>
+</ul>
+
+<p>
+  Prijavom rada javljate se za usmeno i javno izlaganje Vašeg rada na konferenciji.
+Izlaganja traju 10-15 minuta i izvode se uz PPT prezentaciju ili u obliku postera. Nije potrebno slati cjeloviti rad.
+<br> <br>
+Sudjelovanje na konferenciji je besplatno za sve sudionike.
+
+</p>
+<p>
+  Sažeci se šalju putem elektroničke pošte konferencije: <a href="mailto:infodaska2024@gmail.com">infodaska2024@gmail.com</a> 
+  
+</p>
 </div>
 <hr>
 
   <div class="rokovi">
 
   <h2 id="rokovi">Rokovi</h2>
+
+  <p>
+    Predaja sažetka: <br>
+    Obavijest o prihvaćanju: <br>
+    Predaja prezentacije: <br>
+
+  </p>
 </div>
 
 <hr>

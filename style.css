@@ -7,44 +7,36 @@ body {
 }
 
 header {
-    background-color: #43525a;
+    background-color: #66747b;
     color: white;
     text-align: center;
     padding: 1em;
 }
 
 nav {
-    background-color: #43525a;
+    background-color: #3e4b51;
     padding: 1em;
-    text-align: center;
+    display: flex;
+    margin-top: -30px;
+    align-items: center;
 }
 
-footer {
-    background-color: #43525a;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    bottom: 0;
-}
-
-section {
-    padding: 2em;
+.logo img {
+    max-height: 40px; /* Prilagodi veličinu loga prema potrebi */
 }
 
 nav a:hover {
     color: #ffffff;
-    transform: scale(1.1); /* Primjer povećanja veličine na hoveru */
+    transform: scale(1.1);
 }
-
 
 nav a {
     position: relative;
     display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 1em;
     margin: 0 1em;
-    transition: color 0.3s ease-in-out; /* Dodano pravilo za glatki prijelaz boje teksta */
+    transition: color 0.3s ease-in-out;
 }
 
 nav a::before {
@@ -52,7 +44,7 @@ nav a::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.1); /* Bijela pozadina s 50% transparentnosti */
+    background-color: rgba(255, 255, 255, 0.1);
     top: 0;
     left: 0;
     transform: scaleX(0);
@@ -64,6 +56,34 @@ nav a:hover::before {
     transform: scaleX(1);
     transform-origin: right;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #43525a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 h1 {
     font-family: 'Arial', sans-serif;
     font-size: 2.5em; /* Prilagodite veličinu fonta prema potrebi */
@@ -73,34 +93,8 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Dodajte sjenu tekstu */
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #43525a;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #ffffff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown-toggle::after {
-    content: '\2193'; /* Unicode za strelicu prema dolje */
-    margin-left: 5px;
+section {
+    padding: 2em;
 }
 
 #tekst_1{
@@ -115,6 +109,7 @@ font-weight: bold;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border-radius: 10%;
 } 
 
 #tekst_2{
@@ -161,11 +156,12 @@ font-size: 20px;
 
 
 
-.mogucnost_sudjelovanja{
+.upute{
     margin-left: 25%;
     margin-right: 25%;
     font-size: 20px;
 }
+
 
 .rokovi{
     margin-left: 25%;
@@ -213,3 +209,8 @@ font-size: 20px;
     margin-left: 45%;
     margin-right: 45%;
 }
+
+#tekst3{
+    text-align: justify;
+}
+
