@@ -1,3 +1,4 @@
+/*BODY*/
 body {
     font-family: Copperplate;
     margin: 0;
@@ -6,6 +7,16 @@ body {
     font-size: large;
 }
 
+hr {
+    border: 0; 
+    height: 1px; 
+    background-color: #6c8593;
+    margin: 20px 0; 
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*HEADER I NAVIGACIJA*/
 header {
     background-color: #66747b;
     color: white;
@@ -13,30 +24,38 @@ header {
     padding: 1em;
 }
 
+#pocetna{
+    margin-right: 24%;
+    font-size: 30px;
+    border: white solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
 nav {
     background-color: #3e4b51;
     padding: 1em;
     display: flex;
-    margin-top: -30px;
     align-items: center;
 }
 
+.logo {
+    margin-right: auto;
+}
+
 .logo img {
-    max-height: 40px; /* Prilagodi veličinu loga prema potrebi */
+    max-height: 50px;
+}
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
     color: #ffffff;
     transform: scale(1.1);
-}
-
-nav a {
-    position: relative;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    margin: 0 1em;
-    transition: color 0.3s ease-in-out;
 }
 
 nav a::before {
@@ -55,6 +74,11 @@ nav a::before {
 nav a:hover::before {
     transform: scaleX(1);
     transform-origin: right;
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .dropdown {
@@ -84,19 +108,29 @@ nav a:hover::before {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em; /* Prilagodite veličinu fonta prema potrebi */
-    color: #b72126    ; /* Boja teksta */
-    text-align: center;
-    margin-bottom: 20px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Dodajte sjenu tekstu */
+nav a.aktivna {
+    background-color: white;
+    color: #43525a; 
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
 }
 
+
+/*FOTOGALERIJA*/
 section {
     padding: 2em;
 }
 
+.fotorama{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10%;
+} 
+
+/*OPĆENITO O KONFERENCIJI*/
 #tekst_1 {
     text-align: justify;
     margin: 0 auto;
@@ -108,17 +142,10 @@ section {
 }
 
 #tekst_1 p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
-.fotorama{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 10%;
-} 
 
 #tekst_2{
     text-align: justify;
@@ -127,32 +154,7 @@ section {
     
     }
 
-hr {
-    border: 0; 
-    height: 1px; 
-    background-color: #6c8593;
-    margin: 20px 0; 
-    margin-left: 25%;
-    margin-right: 25%;
-    
-}
-
-.fade-in-element {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
- }
-
- a {
-    color: #0060B6;
-    text-decoration: none;
-}
-
-a:hover {
-    color:#00A0C6; 
-    text-decoration:none; 
-    cursor:pointer;  
-}
-
+/*TEME I PODTEME KONFERENCIJE*/
 .teme {
     text-align: center;
     margin: 20px auto;
@@ -161,12 +163,6 @@ a:hover {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#tema {
-    color: #3498db;
-    font-size: 34px;
-    margin-bottom: 20px;
 }
 
 .teme p {
@@ -189,34 +185,48 @@ a:hover {
     margin-bottom: 8px;
 }
 
-.teme hr {
-    border: 1px solid #ddd;
-    margin: 20px 0;
-}
-
-
-
-
+/*UPUTE*/
 .upute{
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
+
+.lijevo{
+    text-align: left;
+}
+
+
+/*ROKOVI KONFERENCIJE*/
 .rokovi{
     margin-left: 25%;
     margin-right: 25%;
     font-size: 20px;
-
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+
+/*LOKACIJA KONFERENCIJE*/
 .lokacija{
     margin-left: 25%;
     margin-right: 25%;
     font-size: 20px;
      }
     
-
+/*SMJEŠTAJ*/
      .smjestaj{
         margin-left: 25%;
         margin-right: 25%;
@@ -224,37 +234,80 @@ a:hover {
 
      }
 
+/*JAVNI PRIJEVOZ*/
      .javni_prijevoz{
         margin-left: 25%;
         margin-right: 25%;
         font-size: 20px;
      }
 
+/*PRIVOLA ZA FOTOGRAFIRANJE*/
 .privola{
-
     margin-left: 25%;
     margin-right: 25%;
     font-size: 20px;
 }
 
+/*SPONZORI KONFERENCIJE*/
 .sponzori{
     margin-left: 25%;
     margin-right: 25%;
     font-size: 20px;
-
 }
 
-#top{
-    font-size: 20px;
-    margin-left: 45%;
-    margin-right: 45%;
+/*GUMB POVRATAK NA VRH*/
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    text-decoration: none;
+  }
+  
+  .scroll-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #43525a;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top i {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #344050;
+  }  
+
+
+/*NASLOVI*/
+#lokacija, #rokovi, #upute, #tema, #lokacija, #smjestaj, #javni_prijevoz, #privola, #sponzori{
+    color: #3498db;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+
+
+/*FOOTER*/
 footer {
     background-color: #43525a;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 2px;
+    width: 99.75%;
     bottom: 0;
+    position: relative;
+    margin-top: 15px;
 }
-
