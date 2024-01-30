@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoDASKA</title>
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="fotogalerija/fotorama.js"></script>
@@ -12,24 +13,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div class="page-container">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell large-12 small-12">
 
     <nav>
       <div class="logo">
         <img src="fotogalerija/fotografije/logo1.png" alt="Logo" >
       </div>
-      <a id="pocetna" href="index.html"><b>Početna</b></a>
+      <a href="index.html" >Početna</a>
       <div class="dropdown">
           <a href="#" class="dropdown-toggle aktivna">Prijave</a>
-          <div class="dropdown-content">
-              <a href="#tema">Tema</a>
-              <a href="#upute">Upute</a>
-              <a href="#rokovi">Rokovi</a>
-          </div>
+          
       </div>
       <a href="konferencija.html">Konferencija</a>
       <a href="sponzori.html">Sponzori</a>
   </nav>
-  
     
 <section id="sekcija_1">
    <div class="fotorama" data-width="900px" data-ratio="700/467" data-max-width="100%">
@@ -38,11 +38,10 @@
     <img src="fotogalerija/fotografije/t2.jpg"> <!--URL: https://live.staticflickr.com/65535/52750395392_d5f8335f74_b.jpg-->
     <img src="fotogalerija/fotografije/t1.jpg"> <!--URL: https://storage.needpix.com/rsynced_images/artificial-intelligence-3262753_1280.jpg-->
     <img src="fotogalerija/fotografije/osijek.jpg">
-
-  </div>
+        </div>
+    
 </section>
-<div>
-    <div>
+<hr>
 
 
 <div class="teme"> 
@@ -66,7 +65,9 @@
 
     </ul>
     </p>
-</div>  
+     
+</div>
+
 <hr>
 
 <div class="upute">
@@ -106,11 +107,10 @@
   <p class="lijevo">
     Predaja sažetka: <b>15.04.2024.</b> <br>
     Obavijest o prihvaćanju: <b>01.05.2024.</b> <br>
-    Predaja prezentacije: <b>15.0.2024.</b> <br>
+    Predaja prezentacije: <b>15.05.2024.</b> <br>
   
   </p>
 </div>
-
 
 
   <a id="top" href="#" onclick="scrollToTop()">
@@ -118,10 +118,17 @@
       <i class="fa fa-arrow-up"></i>
     </div>
   </a>
+
+</div>
+</div>
+</div>
   
-    <footer>
+  <footer>
         <p>&copy; 2023 InfoDASKA Konferencija</p>
-    </footer>
+       
+    
+  </footer>
+</div>
 
   <script src="script.js"></script>
 

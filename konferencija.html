@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoDASKA</title>
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="fotogalerija/fotorama.js"></script>
@@ -12,49 +13,50 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div class="page-container">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell large-12 small-12">
 
     <nav>
       <div class="logo">
         <img src="fotogalerija/fotografije/logo1.png" alt="Logo" >
       </div>
-      <a id="pocetna" href="index.html"><b>Početna</b></a>
+      <a href="index.html" >Početna</a>
       <a href="prijave.html">Prijava</a>
       <div class="dropdown">
           <a href="#" class="dropdown-toggle aktivna">Konferencija</a>
-          <div class="dropdown-content">
-              <a href="#lokacija">Lokacija</a>
-              <a href="#smjestaj">Smještaj</a>
-              <a href="#javni_prijevoz">Javni prijevoz</a>
-              <a href="#privola">Privola za fotografiranje</a>
-          </div>
       </div>
       <a href="sponzori.html">Sponzori</a>
   </nav>
-  
-    
+ 
+ 
 <section id="sekcija_1">
-   <div class="fotorama" data-width="900px" data-ratio="700/467" data-max-width="100%">
+    <div class="fotorama" data-width="900px" data-ratio="700/467" data-max-width="100%">
     <img src="fotogalerija/fotografije/ffos.jpg">
     <img src="fotogalerija/fotografije/ffos2.jpg">
     <img src="fotogalerija/fotografije/ffos3.jpg">
     <img src="fotogalerija/fotografije/ffos4.jpg">
     <img src="fotogalerija/fotografije/osijek.jpg">
-
-  </div>
+    </div>
+  
+  
 </section>
-<div>
-    <div>
 
+
+    <hr>
 <div class="lokacija">
   <h2 id="lokacija">Lokacija</h2>
 
     <p>
         Konferencija će se održavati na Filozofskom fakultetu Osijek. <br>Adresa fakulteta je: Ul. Lorenza Jagera 9, 31000, Osijek
     </p>
+      </div>
+   
 
-
+   
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11174.317905820202!2d18.6809084!3d45.5587844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce7a607148fa3%3A0x3f0cc9e48a295957!2sFilozofski%20fakultet%20Osijek!5e0!3m2!1shr!2shr!4v1704890241902!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+
 <hr>
 
 <div class="smjestaj">
@@ -102,12 +104,18 @@ Bolt - linkovi za instaliranje aplikacije: <br>
       <i class="fa fa-arrow-up"></i>
     </div>
   </a>
-  
-    <footer>
+</div>
+</div>
+</div>
+  <footer>
         <p>&copy; 2023 InfoDASKA Konferencija</p>
-    </footer>
+      
+    
+</footer>
+</div>
 
   <script src="script.js"></script>
+
 
 </body>
 </html>
