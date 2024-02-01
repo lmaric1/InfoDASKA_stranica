@@ -12,3 +12,7 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function toggleMenu() {
+  var dropdown = document.querySelector('.dropdown');
+  dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'flex' : 'none';
+}

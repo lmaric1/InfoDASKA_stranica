@@ -6,7 +6,9 @@ body {
     background-color: #ffffff;
     font-size: large;
 }
-
+.content{
+    flex: 1;
+}
 hr {
     border: 0; 
     height: 1px; 
@@ -107,6 +109,12 @@ nav a.aktivna {
     padding: 10px;
     border-radius: 12px;
     font-weight: bold;
+}
+
+.trenutna{
+    border: solid 1px white;
+    border-radius: 12px;
+    padding: 10px;
 }
 
 
@@ -246,8 +254,8 @@ section {
     align-items: center;
     justify-content: flex-end;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 7px;
     z-index: 999;
     text-decoration: none;
   }
@@ -291,13 +299,212 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    margin-top: auto;
+    clear: both;
+
 }
 
 .page-container{
     position: relative;
     min-height: 100vh;
+}
+
+/*RESPONZIVNOST*/
+@media screen and (max-width: 768px) {
+    .fotorama {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    nav a {
+        margin: 0.5em 0;
+    }
+
+    .sponzori {
+        font-size: 16px;
+    }
+    .teme p {
+        font-size: 14px;
+    }
+
+    .upute li, .upute p {
+        font-size: 14px;
+    }
+
+    .rokovi p {
+        font-size: 14px;
+    }
+    .lokacija iframe {
+        width: 100%;
+    }
+
+    .smjestaj,
+    .javni_prijevoz,
+    .privola {
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (min-width: 770px) {
+    .menu-icon {
+      display: none; 
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+   .dropdown{
+    display: none;
+   }
+   .menu-icon {
+    flex-direction: column;
+    cursor: pointer;
+    display: flex;
+      align-self: flex-end;
+      margin-top:-30px ;
+      padding-bottom: 20px;
+  }
+  .dropdown {
+    display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: 10;
+      width: 92%;
+      background-color: #3e4b51;
+      z-index: 1;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+      text-align: center;
+  }
+  
+  .dropdown a:hover {
+    background-color: ##3e4b51;
+  }
+  
+  .menu-open {
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  }
+
+@media screen and (max-width: 600px) {
+    #map-iframe {
+        width: 100%; 
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        transition: margin-left 0.3s;
+    }
+    nav a {
+        font-size: 14px;
+    }
+
+    .sponzori {
+        font-size: 14px;
+    }
+    .teme p {
+        font-size: 12px;
+    }
+
+    .upute li, .upute p {
+        font-size: 12px;
+    }
+
+    .rokovi p {
+        font-size: 12px;
+    }
+    .lokacija iframe {
+        height: 300px;
+    }
+
+    .smjestaj,
+    .javni_prijevoz,
+    .privola {
+        font-size: 12px;
+    }
+    nav {
+        background-color: #3e4b51;
+        overflow: hidden;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .logo img {
+        max-height: 40px;
+      }
+      
+      .dropdown {
+        display: none;
+          flex-direction: column;
+          position: fixed;
+          margin-top: -25px;
+          left: 10;
+          width: 93%;
+          background-color: #3e4b51;
+          z-index: 1;
+      }
+      
+      .dropdown a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: background-color 0.3s;
+          text-align: center;
+      }
+      
+      .dropdown a:hover {
+        background-color: #3e4b51;
+      }
+      
+      .menu-icon {
+        flex-direction: column;
+        cursor: pointer;
+        display: flex;
+          align-self: flex-end;
+      }
+      .menu-open {
+        margin-left: 20px; 
+        overflow: hidden;
+      }
+      
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+      }
+      
+      
 }
