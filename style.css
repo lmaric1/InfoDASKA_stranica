@@ -1,6 +1,5 @@
 /*BODY*/
 body {
-    font-family: Copperplate;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -103,13 +102,6 @@ nav a:hover::before {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-nav a.aktivna {
-    background-color: white;
-    color: #43525a; 
-    padding: 10px;
-    border-radius: 12px;
-    font-weight: bold;
-}
 
 .trenutna{
     border: solid 1px white;
@@ -157,12 +149,12 @@ section {
 .teme {
     text-align: center;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} 
 
 .teme p {
     font-size: 16px;
@@ -181,14 +173,14 @@ section {
 }
 
 .teme li {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 /*UPUTE*/
 .upute{
     text-align: center;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -208,7 +200,7 @@ section {
     font-size: 20px;
     text-align: center;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -220,6 +212,7 @@ section {
 /*LOKACIJA KONFERENCIJE*/
 .lokacija{
  
+    padding-top: 20px;
     font-size: 20px;
      }
     
@@ -233,7 +226,13 @@ section {
 /*JAVNI PRIJEVOZ*/
      .javni_prijevoz{
        
-        font-size: 20px;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 700px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      }
 
 /*PRIVOLA ZA FOTOGRAFIRANJE*/
@@ -246,6 +245,7 @@ section {
 .sponzori{
  
     font-size: 20px;
+    padding-top: 20px;
 }
 
 /*GUMB POVRATAK NA VRH*/
@@ -395,7 +395,7 @@ footer {
   }
   
   .dropdown a:hover {
-    background-color: ##3e4b51;
+    background-color: #3e4b51;
   }
   
   .menu-open {
@@ -413,7 +413,7 @@ footer {
   
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #map-iframe {
         width: 100%; 
         height: 300px;
