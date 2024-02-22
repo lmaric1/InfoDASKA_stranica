@@ -9,12 +9,11 @@ body {
     flex: 1;
 }
 
-#poster{
+.kposter{
     margin: 0 auto;
     max-width: 800px;
     font-weight: bold;
     color: #3498db;
-
 }
 
 hr {
@@ -389,7 +388,7 @@ footer {
       flex-direction: column;
       position: fixed;
       top: 80px;
-      left: 10;
+      left: 10px;
       width: 92%;
       background-color: #3e4b51;
       z-index: 1;
@@ -479,7 +478,7 @@ footer {
           flex-direction: column;
           position: fixed;
           margin-top: -25px;
-          left: 10;
+          left: 10px;
           width: 93%;
           background-color: #3e4b51;
           z-index: 1;
